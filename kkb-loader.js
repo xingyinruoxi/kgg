@@ -97,7 +97,7 @@ function initSchedule() {
 module.exports = {
     initRouter,
     initController,
-    // initService,
+    initService,
     // loadConfig,
     // initSchedule,
 };

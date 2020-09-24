@@ -2,7 +2,7 @@ const koa = require("koa");
 const {
     initRouter,
     initController,
-    //   initService,
+    initService,
     //   loadConfig,
     // initSchedule,
 } = require("./kkb-loader");
@@ -13,7 +13,7 @@ class Kkb {
 
         // loadConfig(this);
 
-        // this.$service = initService();
+        this.$service = initService();
 
         this.$ctrl = initController(this); // 加载ctrl
 
