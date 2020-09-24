@@ -16,13 +16,13 @@ function readFolder(dir, callBack) {
     });
 }
 
-function initRouter(app) {
+function initRouter() {
     const router = new Router();
     readFolder("routes", (fileName, fileContent) => {
         const prefix = fileName === "index" ? "" : "/" + fileName;
-        const routes = fileContent(app);
+        const routes = fileContent();
         Object.keys(routes).forEach((key) => {
-            const [method, path] = key.split(/\s/);
+            const [method, path] = key.split(/\s+/);
             // 注册路由
             router[method](prefix + path, fileContent()[key]);
             // router[method](prefix + path, async() => {});
