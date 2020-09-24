@@ -19,6 +19,8 @@
   "homepage": "https://github.com/xingyinruoxi/kgg#readme",
   "dependencies": {
     "koa": "^2.13.0",
-    "koa-router": "^9.4.0"
+    "koa-router": "^9.4.0",
+    "node-schedule": "^1.3.2",
+    "sequelize": "^6.3.5"
   }
 }
